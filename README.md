@@ -16,14 +16,14 @@ on p.id = oi.product_id
 where o.id = 2; 
 
 2.
-INSERT INTO shop.orders (FIO, address, courier_id) VALUES ('Анна', 'ул.Маркуса 18', '1');  
+INSERT INTO shop.orders (FIO, address, courier_id) VALUES ('Анна', 'Маркуса', '1');
 
-INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('1', '2', '1');  
+INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('1', '2', '1');//cоздали заказ для нового пользователя Анна 
 
 3.
-SELECT * FROM shop.orders where orders.courier_id=1;  
+SELECT * FROM shop.orders where orders.courier_id=1;//Вывели все заказы для заданного id курьера
 
 4.
-UPDATE shop.order_items SET amount = '5' WHERE (id = '3');  
+UPDATE shop.order_items SET amount = '5' WHERE (id = '3');//Увеличили кол-во продукта по имени продукта в конкретном заказе по id
 
 
