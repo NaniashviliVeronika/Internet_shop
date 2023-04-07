@@ -1,5 +1,4 @@
 # Интернет магазин
-
 1.
 SELECT o.FIO, o.address, p.name, oi.amount, p.price*oi.amount as Sum, c.name   
 
