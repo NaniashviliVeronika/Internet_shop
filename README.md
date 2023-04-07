@@ -24,8 +24,8 @@ INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('1', '2', '1
 SELECT * from shop.orders where orders.courier_id=1;
 
 4.
-UPDATE shop.order_items
-SET amount = '5'
+UPDATE shop.order_items  
+SET amount = '5'  
 WHERE (id = '3');
 
 
