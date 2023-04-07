@@ -6,7 +6,7 @@ SELECT o.FIO, o.address, p.name, oi.amount, p.price*oi.amount as Sum, c.name
 from shop.orders as o
 
 join shop.couriers as c
-on o.courier_id = c.id
+# on o.courier_id = c.id
 
 join shop.order_items as oi
 on o.id = oi.order_id
