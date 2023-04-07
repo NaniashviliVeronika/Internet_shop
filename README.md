@@ -21,9 +21,9 @@ INSERT INTO shop.orders (FIO, address, courier_id) VALUES ('Анна', 'Марк
 INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('1', '2', '1');//cоздали заказ для нового пользователя Анна 
 
 3.
-SELECT * FROM shop.orders where orders.courier_id=1;//вывели все заказы для заданного id курьера
+SELECT * from shop.orders where orders.courier_id=1;//вывели все заказы для заданного id курьера
 
 4.
-UPDATE shop.order_items SET amount = '5' WHERE (id = '3');//увеличили кол-во продукта по имени продукта в конкретном заказе по id
+UPDATE shop.order_items SET amount = '5' where (id = '3');//увеличили кол-во продукта по имени продукта в конкретном заказе по id
 
 
