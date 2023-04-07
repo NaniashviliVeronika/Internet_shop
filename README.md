@@ -14,4 +14,4 @@ on o.id = oi.order_id
 join shop.products as p
 on p.id = oi.product_id
 
-where o.id = 2
+where o.id = 2;
