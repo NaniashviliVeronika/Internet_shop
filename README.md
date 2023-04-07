@@ -19,3 +19,6 @@ where o.id = 2;
 INSERT INTO shop.orders (FIO, address, courier_id) VALUES ('Анна', 'ул.Маркуса 18', '1');  
 
 INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('1', '2', '1');  
+
+3.
+SELECT * FROM shop.orders where orders.courier_id=1;  
