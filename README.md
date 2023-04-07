@@ -13,4 +13,9 @@ on o.id = oi.order_id
 join shop.products as p  
 on p.id = oi.product_id  
 
-where o.id = 2;  
+where o.id = 2; 
+
+2.
+INSERT INTO shop.orders (FIO, address, courier_id) VALUES ('Анна', 'ул.Маркуса 18', '1');  
+
+INSERT INTO shop.order_items (product_id, order_id, amount) VALUES ('1', '2', '1');  
